@@ -24,7 +24,7 @@ const WORKER_URL = 'https://pear.zzxu.de';
 
 // 用户配置 (qx用户自己修改CustomScheme 需要填写完整的UrlScheme)
 let USER_CONFIG = {
-    PLAYER_Code: "lenna",    // 默认播放器
+    PLAYER_Code: "infuse",    // 默认播放器
     CustomScheme: "",        // 自定义 Scheme
     UrlEncode: ""            // 是否URL编码: "yes"/"no"/""(自动)
 };
