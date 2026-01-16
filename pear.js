@@ -24,7 +24,7 @@ const WORKER_URL = 'https://pear.zzxu.de';
 
 // 用户配置 (qx用户自己修改CustomScheme 需要填写完整的UrlScheme)
 let USER_CONFIG = {
-    PLAYER_Code: "lenna",    // 默认播放器
+    PLAYER_Code: "infuse",    // 默认播放器
     CustomScheme: "",        // 自定义 Scheme
     UrlEncode: ""            // 是否URL编码: "yes"/"no"/""(自动)
 };
@@ -74,12 +74,12 @@ function getFinalScheme() {
     }
     let input = USER_CONFIG.PLAYER_Code || "lenna";
     if (input.includes("{") || input.includes("}")) {
-        input = "lenna";
-        USER_CONFIG.PLAYER_Code = "lenna";
+        input = "infuse";
+        USER_CONFIG.PLAYER_Code = "infuse";
     }
     
     const key = Object.keys(PLAYER_MAP).find(k => k.toLowerCase() === input.toLowerCase());
-    return key ? PLAYER_MAP[key] : PLAYER_MAP["lenna"];
+    return key ? PLAYER_MAP[key] : PLAYER_MAP["infuse"];
 }
 
 function buildPlayerUrl(videoUrl) {
